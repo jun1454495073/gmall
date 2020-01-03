@@ -8,7 +8,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="gmall-admin" />
         <module name="gmall-core" />
+        <module name="gmall-oms" />
         <module name="gmall-pms" />
+        <module name="gmall-sms" />
+        <module name="gmall-ums" />
         <module name="gmall-wms" />
       </profile>
     </annotationProcessing>
@@ -16,7 +19,10 @@
       <module name="gmall" target="1.8" />
       <module name="gmall-admin" target="1.8" />
       <module name="gmall-core" target="1.8" />
+      <module name="gmall-oms" target="1.8" />
       <module name="gmall-pms" target="1.8" />
+      <module name="gmall-sms" target="1.8" />
+      <module name="gmall-ums" target="1.8" />
       <module name="gmall-wms" target="1.8" />
     </bytecodeTargetLevel>
   </component>
