@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: wms-service
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        #还要什么组合命名空间的信息以及yml拓展文件的设置

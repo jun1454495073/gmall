@@ -16,6 +16,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<mysql.version>5.1.46</mysql.version>
 	</properties>
 
 	<dependencies>
@@ -54,7 +55,40 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>com.aliyun.oss</groupId>
+			<artifactId>aliyun-sdk-oss</artifactId>
+			<version>3.5.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.atguigu</groupId>
+			<artifactId>gmall-sms-interface</artifactId>
+		</dependency>
 	</dependencies>
+
+	<!-- SpringCloud的依赖 -->
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.atguigu</groupId>
+				<artifactId>gmall-sms-interface</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>Greenwich.SR2</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 	<build>
 		<plugins>
